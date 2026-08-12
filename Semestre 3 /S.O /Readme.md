@@ -1,4 +1,4 @@
-# 💻 Sistemas Operacionais I (SO I)
+# 💻 Sistemas Operacionais 
 
 Repositório dedicado aos estudos, atividades práticas, anotações e projetos da disciplina de **Sistemas Operacionais I**, ministrada pelo **Prof. Deivison** no 3º semestre do curso de **Análise e Desenvolvimento de Sistemas (ADS)**.
 
