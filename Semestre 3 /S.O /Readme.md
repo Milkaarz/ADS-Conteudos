@@ -12,14 +12,4 @@ O objetivo desta disciplina é compreender o funcionamento interno, a arquitetur
 * **Semestre:** 3º Semestre
 * **Professor:** Deivison
 
----
 
-## 🗂️ Estrutura da Pasta
-
-```text
-📁 S.O/
-├── 📁 Aulas-e-Notas/          # Anotações teóricas e resumos
-├── 📁 Exercicios/             # Listas de exercícios e fixação de conteúdo
-├── 📁 Scripts-e-Comandos/     # Shell Scripts, Bash e comandos utilitários
-├── 📁 Projetos/               # Trabalhos e práticas de laboratório
-└── 📄 README.md               # Descrição principal da pasta
