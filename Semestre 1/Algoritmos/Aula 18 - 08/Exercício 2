@@ -1,0 +1,17 @@
+Algoritmo "CalcularPrestacao"
+
+Var
+valor, prestacao, taxa, dias: real
+
+Inicio
+
+escreval("Informe o valor da prestação")
+leia(valor)
+escreval("Informe o valor da taxa")
+leia(taxa)
+escreval("Informe o tempo")
+leia(dias)
+prestacao <- valor + (valor*(taxa/100)*dias)
+escreval("O Valor da sua prestação em atraso é ", prestacao)
+
+Fimalgoritmo
