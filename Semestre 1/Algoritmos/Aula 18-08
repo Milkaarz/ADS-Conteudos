@@ -1,0 +1,8 @@
+Visual G - Código
+
+Inicio
+escreval("Informe a temperatatura em graus Celsius")
+leia(Celsius)
+F <- (1.8 * Celsius) + 32
+escreval("Temperatura em graus Fahrenheit ", F)
+Fimalgoritmo
