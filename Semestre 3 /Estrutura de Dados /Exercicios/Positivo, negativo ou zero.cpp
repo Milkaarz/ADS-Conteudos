@@ -5,15 +5,15 @@ using namespace std;
 int main() {
     float numero;
 
-    cout << "Digite um numero: ";
-    cin >> numero;
+    std::cout << "Digite um numero: " << std::endl;
+    std::cin >> numero;
 
     if (numero > 0) {
-        cout << "O numero eh positivo." << endl;
+        std::cout << "O numero eh positivo." << endl;
     } else if (numero < 0) {
-        cout << "O numero eh negativo." << endl;
+        std::cout << "O numero eh negativo." << endl;
     } else {
-        cout << "O numero eh zero." << endl;
+        std::cout << "O numero eh zero." << endl;
     }
 
     return 0;
