@@ -1,0 +1,13 @@
+Var
+nota1, nota2, media: real
+
+
+Inicio
+Escreval ("Digite nota 1")
+leia(nota1)
+Escreval ("Digite nota 2")
+leia(nota2)
+media <- ((nota1 + nota2) / 2)
+Escreval ("Sua media é: ", media)
+
+Fimalgoritmo
