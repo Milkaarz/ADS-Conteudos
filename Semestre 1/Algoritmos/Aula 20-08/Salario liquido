@@ -1,0 +1,23 @@
+Var
+   salario, hora, horames, desconto, liquido: real
+   nome: caractere
+
+Inicio
+   escreval("Insira seu nome: ")
+   leia(nome)
+   escreval("Digite o valor da hora: ")
+   leia(hora)
+   escreval("Informe as horas trabalhadas no mês: ")
+   leia(horames)
+
+   salario <- hora * horames
+   desconto <- salario * 0,09
+   liquido <- salario - desconto
+
+   escreval("-----------------------------")
+   escreval("Nome: ", nome)
+   escreval("Seu salario bruto: R$ ", salario)
+   escreval("Seu desconto (9%): R$ ", desconto)
+   escreval("Seu salario liquido: R$ ", liquido)
+
+Fimalgoritmo
