@@ -2,6 +2,8 @@
 
 > 🦇 **Organizador web de Halloween:** contagem regressiva, sorteio de fantasia e lista de tarefas da festa, tudo em uma única página.
 
+🧛 Acesse em: https://hallowenies.netlify.app/
+
 | 🏷️ Item | 📋 Detalhe |
 | --- | --- |
 | **Nome do software** | Noite Sombria |
