@@ -1,62 +1,66 @@
-# 🎃 Noite Sombria – Documentação do Software
+# 🎃 Noite Sombria
 
 > 🦇 **Organizador web de Halloween:** contagem regressiva, sorteio de fantasia e lista de tarefas da festa, tudo em uma única página.
 
-🧛 Acesse em: https://hallowenies.netlify.app/
+🧛 **Acesse em:** https://hallowenies.netlify.app/
 
 | 🏷️ Item | 📋 Detalhe |
 | --- | --- |
-| **Nome do software** | Noite Sombria |
-| **Tipo** | Aplicação web de página única (HTML, CSS e JavaScript) |
+| **Tipo** | Aplicação web de página única (HTML, CSS e JavaScript puros) |
 | **Tema visual** | Preto, creme, vermelho-laranja e verde, inspirado em pôsteres de Halloween 👻 |
-| **Funciona offline?** | Sim, depois de carregada (os dados ficam no navegador) |
+| **Backend / banco de dados** | Nenhum. Os dados ficam no navegador (`localStorage`) |
+| **Funciona offline?** | Parcialmente: o código roda sem internet se a página já estiver em cache, mas as fontes vêm do Google Fonts e, sem elas, o navegador usa fontes de reserva |
 | **Custo** | Gratuito 🆓 |
 
 ---
 
 ## 🗺️ Índice
 
-1. [🎯 Objetivo](#1--objetivo)
-2. [⚠️ Problema](#2-️-problema)
-3. [📦 Escopo](#3--escopo)
-4. [⚙️ Requisitos funcionais](#4-️-requisitos-funcionais)
-5. [🛡️ Requisitos não funcionais](#5-️-requisitos-não-funcionais)
-6. [🧩 Como o sistema funciona](#6--como-o-sistema-funciona)
-7. [📖 Glossário](#7--glossário)
+1. [🎯 Objetivo](#-objetivo)
+2. [⚠️ Problema](#️-problema)
+3. [📦 Escopo](#-escopo)
+4. [⚙️ Requisitos funcionais](#️-requisitos-funcionais)
+5. [🛡️ Requisitos não funcionais](#️-requisitos-não-funcionais)
+6. [🧰 Tecnologias utilizadas](#-tecnologias-utilizadas)
+7. [🏗️ Arquitetura](#️-arquitetura)
+8. [🚀 Instalação e execução](#-instalação-e-execução)
+9. [🔧 Configuração](#-configuração)
+10. [🔌 APIs, banco de dados e variáveis de ambiente](#-apis-banco-de-dados-e-variáveis-de-ambiente)
+11. [🧪 Testes](#-testes)
+12. [🌐 Deploy](#-deploy)
+13. [📖 Glossário](#-glossário)
 
 ---
 
-## 1. 🎯 Objetivo
+## 🎯 Objetivo
 
-Oferecer uma ferramenta web **simples e gratuita** que ajude pessoas a planejar e aproveitar o Halloween (**31 de outubro** 🗓️), reunindo em um só lugar:
+Oferecer uma ferramenta web **simples e gratuita** que ajude pessoas a planejar e aproveitar o Halloween (**31 de outubro**), reunindo em um só lugar:
 
 - ⏳ a **contagem regressiva** até a data;
 - 🧛 a **escolha da fantasia**;
 - ✅ a **organização das tarefas** da festa.
 
-### 🎯 Objetivos específicos
+**Objetivos específicos**
 
-| 🏁 Objetivo | 💡 O que significa na prática |
+| 🏁 Objetivo | 💡 Na prática |
 | --- | --- |
 | Reduzir o tempo gasto decidindo a fantasia | Um clique entrega uma ideia pronta, como "Bruxa retrô anos 80" |
-| Permitir acompanhar o progresso dos preparativos | Uma barra mostra quanto da lista já foi feito |
-| Funcionar sem cadastro, instalação ou conexão constante | Basta abrir a página; nada de login, app ou conta |
+| Acompanhar o progresso dos preparativos | Uma barra mostra quanto da lista já foi feito |
+| Funcionar sem cadastro, instalação ou conta | Basta abrir a página |
 
 ---
 
-## 2. ⚠️ Problema
+## ⚠️ Problema
 
-Quem organiza uma festa de Halloween costuma **deixar tudo para a última hora** 😱. Isso acontece por três motivos:
+Quem organiza uma festa de Halloween costuma **deixar tudo para a última hora** 😱:
 
-1. 📝 **Tarefas espalhadas:** ficam em mensagens, notas e na memória.
-2. 🤔 **Indecisão:** escolher a fantasia gera demora e dúvida.
-3. ⏰ **Falta de noção de prazo:** ninguém sabe ao certo quanto tempo resta.
+1. 📝 **Tarefas espalhadas** em mensagens, notas e na memória.
+2. 🤔 **Indecisão** na escolha da fantasia.
+3. ⏰ **Falta de noção de prazo.**
 
 > 💥 **Resultado:** estresse, compras apressadas e itens esquecidos.
 
-### 🔧 Como o software resolve
-
-| 😖 Dor do usuário | 🛠️ Solução do software |
+| 😖 Dor do usuário | 🛠️ Solução |
 | --- | --- |
 | Tarefas soltas e esquecidas | Lista única com barra de progresso ✅ |
 | Dificuldade de escolher a fantasia | Sorteio de ideias de fantasia 🎲 |
@@ -64,24 +68,22 @@ Quem organiza uma festa de Halloween costuma **deixar tudo para a última hora**
 
 ---
 
-## 3. 📦 Escopo
-
-O escopo define **o que o sistema faz** e, igualmente importante, **o que ele não faz**.
+## 📦 Escopo
 
 ### ✅ Dentro do escopo
 
 - ⏳ Contagem regressiva até 31/10, com dias, horas, minutos e segundos.
 - 🎲 Sorteio de fantasias por combinação de personagem e estilo.
 - 📋 Lista de tarefas com marcação, exclusão e progresso.
-- 💾 Salvamento local dos dados no navegador do usuário.
-- 📱 Interface responsiva (celular, tablet e computador), no tema escuro inspirado em pôsteres de Halloween.
+- 💾 Salvamento local dos dados no navegador.
+- 📱 Interface responsiva, no tema escuro inspirado em pôsteres de Halloween.
 
 ### 🚫 Fora do escopo
 
 - 🔐 Contas de usuário e login.
 - 🔄 Sincronização entre dispositivos.
 - 🛒 Compra de produtos ou integração com lojas.
-- 💌 Convites, confirmação de presença e chat entre convidados.
+- 💌 Convites, confirmação de presença e chat.
 - 📲 Aplicativo nativo para Android ou iOS.
 
 ### 👥 Público e premissas
@@ -90,105 +92,227 @@ O escopo define **o que o sistema faz** e, igualmente importante, **o que ele n�
 | --- | --- |
 | **Público** | Pessoas de 12 anos ou mais que organizam ou participam de festas temáticas |
 | **Premissa** | O usuário possui um navegador moderno |
-| **Restrição** | Os dados ficam apenas no aparelho. ⚠️ Limpar o navegador apaga a lista |
+| **Restrição** | Os dados ficam só no aparelho. ⚠️ Limpar o navegador apaga a lista |
 
 ---
 
-## 4. ⚙️ Requisitos funcionais
+## ⚙️ Requisitos funcionais
 
-Requisitos funcionais descrevem **o que o sistema deve fazer**.
+**Prioridade:** 🔴 Alta · 🟡 Média · 🟢 Baixa
 
-**Legenda de prioridade:** 🔴 Alta  ·  🟡 Média  ·  🟢 Baixa
-
-| Código | 🧩 Módulo | 📝 Requisito | 💬 Em outras palavras | Prioridade |
-| --- | --- | --- | --- | --- |
-| **RF01** | ⏳ Contagem | O sistema deve exibir o tempo restante até o próximo 31 de outubro, atualizado a cada segundo. | Os "dentes" do topo contam dias, horas, minutos e segundos | 🔴 Alta |
-| **RF02** | 🎲 Fantasia | O sistema deve sortear uma fantasia combinando personagem e estilo a cada clique. | Cada clique em "Sortear fantasia" gera uma ideia nova | 🔴 Alta |
-| **RF03** | ⭐ Fantasia | O usuário deve poder salvar uma fantasia favorita e vê-la ao reabrir o sistema. | Guarde a ideia que mais gostou | 🟡 Média |
-| **RF04** | ➕ Tarefas | O usuário deve poder adicionar tarefas à lista, com texto de até 80 caracteres. | Digite e clique em "Adicionar" | 🔴 Alta |
-| **RF05** | ☑️ Tarefas | O usuário deve poder marcar uma tarefa como concluída ou desfazer a marcação. | Marcou por engano? Desmarque | 🔴 Alta |
-| **RF06** | 🗑️ Tarefas | O usuário deve poder excluir tarefas. | O botão × remove o item | 🟡 Média |
-| **RF07** | 📊 Progresso | O sistema deve mostrar a porcentagem de tarefas concluídas em uma barra de progresso. | A barra verde enche conforme você conclui | 🟡 Média |
-| **RF08** | 💾 Dados | O sistema deve manter tarefas e favorita salvas no navegador entre as visitas. | Fechou e voltou? Tudo continua lá | 🔴 Alta |
-| **RF09** | 💬 Mensagens | O sistema deve exibir uma mensagem orientando o usuário quando a lista estiver vazia. | Lista vazia mostra "Adicione a primeira tarefa" | 🟢 Baixa |
-
----
-
-## 5. 🛡️ Requisitos não funcionais
-
-Requisitos não funcionais descrevem **como o sistema deve ser**: qualidade, desempenho, segurança e conforto de uso.
-
-| Código | 🏷️ Categoria | 📝 Requisito | 🎯 Por que importa |
-| --- | --- | --- | --- |
-| **RNF01** | 🙂 Usabilidade | Todas as ações devem ser feitas em até dois cliques, com textos claros em português. | Quem está ocupado com a festa não pode perder tempo aprendendo a usar o sistema |
-| **RNF02** | ⚡ Desempenho | A página deve carregar em menos de 2 segundos em conexão 4G e responder às ações em menos de 100 ms. | Resposta rápida dá sensação de fluidez |
-| **RNF03** | 📱 Responsividade | A interface deve funcionar em telas a partir de 360 px de largura, sem rolagem horizontal da página. | A maioria das pessoas usa o celular |
-| **RNF04** | ♿ Acessibilidade | Deve haver foco visível no teclado, contraste adequado, rótulos nos campos e respeito à preferência de movimento reduzido. | Qualquer pessoa deve conseguir usar |
-| **RNF05** | 🌐 Compatibilidade | Deve funcionar nas versões recentes de Chrome, Firefox, Safari e Edge. | Cobre os navegadores mais usados |
-| **RNF06** | 🔒 Privacidade | Nenhum dado pessoal pode ser enviado a servidores; tudo fica no navegador do usuário. | Suas tarefas são só suas |
-| **RNF07** | 🧱 Confiabilidade | Se o armazenamento local estiver indisponível, o sistema deve continuar funcionando durante a sessão. | O sistema não "quebra" em navegadores restritos |
-| **RNF08** | 🧹 Manutenibilidade | O código deve ficar em um único arquivo HTML, organizado em estilos, estrutura e scripts separados por seção. | Facilita corrigir e evoluir |
-
-### 📊 Visão geral dos requisitos
-
-| Tipo | Quantidade | 🔴 Alta | 🟡 Média | 🟢 Baixa |
-| --- | :---: | :---: | :---: | :---: |
-| ⚙️ Funcionais | 9 | 4 | 3 | 1 |
-| 🛡️ Não funcionais | 8 | n/a | n/a | n/a |
-
----
-
-## 6. 🧩 Como o sistema funciona
-
-### 🔁 Fluxo de uso
-
-```text
-                 🌐 Abrir a página
-                        │
-        ┌───────────────┼────────────────┐
-        ▼               ▼                ▼
- ⏳ Ver contagem   🎲 Sortear        📋 Gerenciar
-    regressiva        fantasia           tarefas
-                        │                │
-                        ▼                ▼
-                 ⭐ Salvar         ☑️ Marcar como
-                    favorita          concluída
-                        │                │
-                        │                ▼
-                        │          📊 Barra de
-                        │             progresso
-                        │                │
-                        └───────┬────────┘
-                                ▼
-                     💾 Salvo no navegador
-```
-
-### 🏗️ Estrutura da tela
-
-```text
-┌──────────────────────────────────────────┐
-│  🦷  [ 02 ][ 14 ][ 33 ][ 07 ]  🦷        │  ← Contagem regressiva (RF01)
-│                                          │
-│       Noite  Sombria  (título) 🎃        │
-├──────────────────────────────────────────┤
-│  ┌───────────────┐  ┌─────────────────┐  │
-│  │ 🎲 Sorteador   │  │ 📋 Lista da festa│  │  ← Aplicativo
-│  │ de fantasia   │  │ ▓▓▓░░ progresso │  │    (RF02 a RF09)
-│  └───────────────┘  └─────────────────┘  │
-└──────────────────────────────────────────┘
-```
-
-### 🔐 Onde ficam os dados?
-
-| 📦 Dado | 📍 Local | ⏱️ Duração |
+| Código | Requisito | Prioridade |
 | --- | --- | --- |
-| Tarefas | Armazenamento local do navegador | Até o usuário limpar o navegador |
-| Fantasia favorita | Armazenamento local do navegador | Até o usuário limpar o navegador |
-| Contagem regressiva | Calculada na hora, não é guardada | Sempre atual |
+| **RF01** | Exibir o tempo restante até o próximo 31 de outubro, atualizado a cada segundo | 🔴 |
+| **RF02** | Sortear uma fantasia combinando personagem e estilo a cada clique | 🔴 |
+| **RF03** | Salvar uma fantasia favorita e exibi-la ao reabrir o sistema | 🟡 |
+| **RF04** | Adicionar tarefas, com texto de até 80 caracteres | 🔴 |
+| **RF05** | Marcar uma tarefa como concluída ou desfazer a marcação | 🔴 |
+| **RF06** | Excluir tarefas | 🟡 |
+| **RF07** | Mostrar a porcentagem de tarefas concluídas em uma barra de progresso | 🟡 |
+| **RF08** | Manter tarefas e favorita salvas entre as visitas | 🔴 |
+| **RF09** | Exibir uma mensagem quando a lista estiver vazia | 🟢 |
 
 ---
 
-## 7. 📖 Glossário
+## 🛡️ Requisitos não funcionais
+
+| Código | Categoria | Requisito |
+| --- | --- | --- |
+| **RNF01** | 🙂 Usabilidade | Ações em até dois cliques, com textos claros em português |
+| **RNF02** | ⚡ Desempenho | Carregar em menos de 2 s em 4G e responder às ações em menos de 100 ms |
+| **RNF03** | 📱 Responsividade | Funcionar a partir de 360 px de largura, sem rolagem horizontal |
+| **RNF04** | ♿ Acessibilidade | Foco visível no teclado, contraste adequado, rótulos nos campos e respeito à preferência de movimento reduzido |
+| **RNF05** | 🌐 Compatibilidade | Versões recentes de Chrome, Firefox, Safari e Edge |
+| **RNF06** | 🔒 Privacidade | Nenhum dado pessoal enviado a servidores |
+| **RNF07** | 🧱 Confiabilidade | Continuar funcionando na sessão se o armazenamento local estiver indisponível |
+| **RNF08** | 🧹 Manutenibilidade | Código em um único arquivo HTML, organizado por seções |
+
+---
+
+## 🧰 Tecnologias utilizadas
+
+| 🔧 Tecnologia | 📝 Uso no projeto |
+| --- | --- |
+| **HTML5** | Estrutura da página, com rótulos e atributos de acessibilidade (`aria-label`, `aria-live`) |
+| **CSS3** | Variáveis CSS (`:root`), Flexbox, Grid, `clip-path`/`border-radius` para os dentes e presas, textura de grão com SVG embutido, `prefers-reduced-motion` |
+| **JavaScript (ES6+)** | Toda a lógica, sem frameworks nem bibliotecas |
+| **Web Storage API (`localStorage`)** | Persistência de tarefas e fantasia favorita |
+| **SVG inline** | Fantasmas decorativos |
+| **Google Fonts** | Rubik Wet Paint (título), Bagel Fat One (destaques) e Archivo (texto) |
+| **Netlify** | Hospedagem estática |
+
+> ℹ️ Não há `package.json`, etapa de build, backend nem dependências para instalar.
+
+---
+
+## 🏗️ Arquitetura
+
+A aplicação é **estática e do lado do cliente**: um único arquivo `index.html` contém estrutura, estilos e scripts. Não há servidor próprio.
+
+```text
+┌───────────────────────── Navegador ─────────────────────────┐
+│                                                             │
+│   index.html                                                │
+│   ├── 🎨 <style>   → tema, layout, responsividade           │
+│   ├── 🧱 <body>    → cabeçalho + aplicativo                 │
+│   └── ⚙️ <script>  → lógica                                 │
+│          │                                                  │
+│          ▼                                                  │
+│   💾 localStorage  (chaves: "fav" e "tarefas")              │
+└─────────────────────────────────────────────────────────────┘
+          ▲
+          │ somente carrega o arquivo e as fontes
+   🌐 Netlify (HTML)      🔤 Google Fonts (CSS das fontes)
+```
+
+### 🧩 Organização dos componentes
+
+| 🧱 Componente | 📍 Elemento | ⚙️ Função (JavaScript) | 📋 Requisitos |
+| --- | --- | --- | --- |
+| **Contagem regressiva** ("dentes") | `#count` | `alvo()` calcula a data do próximo 31/10; `tick()` redesenha a cada segundo | RF01 |
+| **Sorteador de fantasia** | `#fant`, `#sort`, `#fav`, `#favtxt` | Listas `per` (personagens) e `est` (estilos); `showFav()` | RF02, RF03 |
+| **Lista da festa** | `#f`, `#novo`, `#lista`, `#vazio` | `render()` desenha a lista; `salvar()` grava e redesenha | RF04 a RF07, RF09 |
+| **Barra de progresso** | `#bar` | Atualizada dentro de `render()` | RF07 |
+| **Camada de armazenamento** | objeto `store` | `store.get(chave, padrão)` e `store.set(chave, valor)`, ambos com `try/catch` | RF08, RNF07 |
+
+### 🔁 Fluxo de dados
+
+```text
+ Ação do usuário (clique / envio de formulário)
+          │
+          ▼
+ Atualiza o array em memória  (ex.: tarefas.push(...))
+          │
+          ▼
+ salvar() ──► store.set() ──► localStorage
+          │
+          ▼
+ render() ──► redesenha a lista e a barra de progresso
+```
+
+### 📁 Estrutura sugerida do repositório
+
+```text
+noite-sombria/
+├── index.html      # aplicação completa
+├── README.md       # esta documentação
+└── netlify.toml    # (opcional) configuração de deploy
+```
+
+---
+
+## 🚀 Instalação e execução
+
+### ✅ Pré-requisitos
+
+| 📦 Item | 🔖 Obrigatório? | 📝 Observação |
+| --- | --- | --- |
+| Navegador moderno (Chrome, Firefox, Safari ou Edge) | Sim | Versões recentes |
+| Git | Para clonar o repositório | Opcional se baixar o ZIP |
+| Python 3 **ou** Node.js | Não | Só para abrir um servidor local, se preferir |
+
+### 📥 Instalação
+
+```bash
+git clone https://github.com/SEU-USUARIO/noite-sombria.git
+cd noite-sombria
+```
+
+> 💡 Troque `SEU-USUARIO` pelo seu usuário do GitHub. Não há dependências para instalar.
+
+### ▶️ Execução
+
+**Opção 1: abrir direto.** Dê dois cliques em `index.html`.
+
+**Opção 2: servidor local (recomendado).**
+
+```bash
+# com Python 3
+python3 -m http.server 8000
+
+# ou com Node.js
+npx serve .
+```
+
+Depois acesse `http://localhost:8000`.
+
+---
+
+## 🔧 Configuração
+
+O projeto não exige configuração para rodar. Se quiser personalizar, edite o `index.html`:
+
+| ✏️ O que mudar | 📍 Onde |
+| --- | --- |
+| Personagens das fantasias | Array `per` no `<script>` |
+| Estilos das fantasias | Array `est` no `<script>` |
+| Tarefas iniciais | Valor padrão de `store.get('tarefas', [...])` |
+| Cores do tema | Variáveis em `:root` (`--blood`, `--pump`, `--grn`, `--ink`, `--bg`) |
+| Data da contagem | Função `alvo()` (mês `9` = outubro, dia `31`) |
+
+---
+
+## 🔌 APIs, banco de dados e variáveis de ambiente
+
+| 📚 Item | 📋 Situação |
+| --- | --- |
+| **APIs próprias** | Não há. O sistema não faz requisições a servidores, exceto o carregamento das fontes |
+| **Banco de dados** | Não há. Os dados ficam no `localStorage` do navegador |
+| **Variáveis de ambiente** | Não há. Nenhuma chave ou segredo é necessário |
+
+### 💾 Dados guardados no `localStorage`
+
+| 🔑 Chave | 🧾 Formato | 📝 Exemplo |
+| --- | --- | --- |
+| `tarefas` | Lista de objetos `{ t: texto, d: concluída }` | `[{"t":"Comprar doces","d":false}]` |
+| `fav` | Texto | `"Bruxa retrô anos 80"` |
+
+---
+
+## 🧪 Testes
+
+O projeto não possui testes automatizados. A verificação é **manual**, seguindo o roteiro abaixo.
+
+| 🧪 Caso | 👣 Passos | ✅ Resultado esperado | 📋 Requisito |
+| --- | --- | --- | --- |
+| CT01 | Abrir a página | Os dentes mostram dias, horas, minutos e segundos e o segundo muda sozinho | RF01 |
+| CT02 | Clicar em "Sortear fantasia" várias vezes | Surge uma combinação nova de personagem e estilo | RF02 |
+| CT03 | Sortear, clicar em "Salvar favorita" e recarregar | A favorita continua exibida | RF03, RF08 |
+| CT04 | Adicionar uma tarefa | Ela aparece na lista | RF04 |
+| CT05 | Marcar e desmarcar uma tarefa | O texto é riscado e volta ao normal | RF05 |
+| CT06 | Clicar em × | A tarefa some | RF06 |
+| CT07 | Concluir metade das tarefas | A barra verde chega a cerca de 50% | RF07 |
+| CT08 | Recarregar a página | Tarefas e estados continuam | RF08 |
+| CT09 | Excluir todas as tarefas | Aparece a mensagem de lista vazia | RF09 |
+| CT10 | Reduzir a janela até 360 px | Sem rolagem horizontal da página | RNF03 |
+| CT11 | Navegar só com o teclado (Tab) | O foco fica visível em todos os controles | RNF04 |
+| CT12 | Abrir em Chrome, Firefox, Safari e Edge | Funciona igual nos quatro | RNF05 |
+
+💡 Para medir desempenho e acessibilidade, rode o **Lighthouse** (aba "Lighthouse" das ferramentas do desenvolvedor do Chrome).
+
+---
+
+## 🌐 Deploy
+
+O site está publicado na **Netlify**: https://hallowenies.netlify.app/
+
+### Opção 1: arrastar e soltar
+
+1. Acesse https://app.netlify.com/drop.
+2. Arraste a pasta do projeto (com o `index.html` na raiz).
+
+### Opção 2: integração com o GitHub (deploy contínuo)
+
+1. No Netlify, escolha **Add new site → Import an existing project** e conecte o repositório.
+2. Deixe **Build command** em branco.
+3. Defina **Publish directory** como `.` (a raiz).
+4. A cada `git push`, o site é atualizado automaticamente.
+
+> ⚠️ O arquivo principal precisa se chamar `index.html` e ficar na raiz, para a Netlify abri-lo como página inicial.
+
+---
+
+## 📖 Glossário
 
 | 🔤 Termo | 💬 Significado |
 | --- | --- |
@@ -196,7 +320,10 @@ Requisitos não funcionais descrevem **como o sistema deve ser**: qualidade, des
 | **Requisito funcional (RF)** | Algo que o sistema deve *fazer* |
 | **Requisito não funcional (RNF)** | Uma qualidade que o sistema deve *ter* (rapidez, segurança, acessibilidade) |
 | **Responsivo** | Que se adapta a telas de qualquer tamanho |
-| **Armazenamento local** | Espaço no próprio navegador onde o site guarda informações |
+| **localStorage** | Espaço no navegador onde o site guarda informações, mesmo após fechar a página |
+| **Deploy** | Publicação do site na internet |
 | **Contraste** | Diferença entre cor do texto e do fundo, que garante boa leitura |
 
 ---
+
+<p align="center">🎃 👻 🦇 🕸️ 🕯️<br><b>Noite Sombria</b> · Halloween 31/10</p>
