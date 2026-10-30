@@ -142,16 +142,25 @@ Requisitos não funcionais descrevem **como o sistema deve ser**: qualidade, des
 
 ### 🔁 Fluxo de uso
 
-```mermaid
-flowchart LR
-    A[🌐 Abrir a página] --> B[⏳ Ver contagem regressiva]
-    A --> C[🎲 Sortear fantasia]
-    A --> D[📋 Gerenciar tarefas]
-    C --> E[⭐ Salvar favorita]
-    D --> F[☑️ Marcar como concluída]
-    F --> G[📊 Barra de progresso]
-    E --> H[(💾 Navegador)]
-    D --> H
+```text
+                 🌐 Abrir a página
+                        │
+        ┌───────────────┼────────────────┐
+        ▼               ▼                ▼
+ ⏳ Ver contagem   🎲 Sortear        📋 Gerenciar
+    regressiva        fantasia           tarefas
+                        │                │
+                        ▼                ▼
+                 ⭐ Salvar         ☑️ Marcar como
+                    favorita          concluída
+                        │                │
+                        │                ▼
+                        │          📊 Barra de
+                        │             progresso
+                        │                │
+                        └───────┬────────┘
+                                ▼
+                     💾 Salvo no navegador
 ```
 
 ### 🏗️ Estrutura da tela
@@ -191,5 +200,3 @@ flowchart LR
 | **Contraste** | Diferença entre cor do texto e do fundo, que garante boa leitura |
 
 ---
-
-<p align="center">🎃 👻 🦇 🕸️ 🕯️<br><b>Noite Sombria</b> · Documentação do software · Halloween 31/10</p>
