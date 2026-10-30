@@ -214,11 +214,9 @@ noite-sombria/
 ### 📥 Instalação
 
 ```bash
-git clone https://github.com/SEU-USUARIO/noite-sombria.git
+git clone https://github.com/Milkaarz/noite-sombria.git
 cd noite-sombria
 ```
-
-> 💡 Troque `SEU-USUARIO` pelo seu usuário do GitHub. Não há dependências para instalar.
 
 ### ▶️ Execução
 
