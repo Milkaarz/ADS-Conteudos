@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="350" viewBox="0 0 900 350" font-family="Consolas, Menlo, 'Courier New', monospace">
+  <rect x="10" y="10" width="880" height="330" rx="14" fill="#1e1e2e"/>
+  <rect x="10" y="10" width="880" height="38" rx="14" fill="#313244"/>
+  <rect x="10" y="34" width="880" height="14" fill="#313244"/>
+  <circle cx="36" cy="29" r="7" fill="#f38ba8"/><circle cx="58" cy="29" r="7" fill="#f9e2af"/><circle cx="80" cy="29" r="7" fill="#a6e3a1"/>
+  <text x="450" y="34" font-size="14" fill="#cdd6f4" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif">💻 Terminal: instalação reproduzível em 7 passos</text>
+  <g font-size="16">
+    <text x="34" y="86"><tspan fill="#f9e2af">1️⃣</tspan><tspan fill="#a6e3a1"> $ </tspan><tspan fill="#cdd6f4">git clone https://github.com/usuario/projeto.git</tspan></text>
+    <text x="34" y="124"><tspan fill="#f9e2af">2️⃣</tspan><tspan fill="#a6e3a1"> $ </tspan><tspan fill="#cdd6f4">cd projeto</tspan></text>
+    <text x="34" y="162"><tspan fill="#f9e2af">3️⃣</tspan><tspan fill="#a6e3a1"> $ </tspan><tspan fill="#cdd6f4">npm install</tspan><tspan fill="#6c7086">            # instalar dependências</tspan></text>
+    <text x="34" y="200"><tspan fill="#f9e2af">4️⃣</tspan><tspan fill="#a6e3a1"> $ </tspan><tspan fill="#cdd6f4">cp .env.example .env</tspan><tspan fill="#6c7086">   # configurar variáveis</tspan></text>
+    <text x="34" y="238"><tspan fill="#f9e2af">5️⃣</tspan><tspan fill="#a6e3a1"> $ </tspan><tspan fill="#cdd6f4">npm start</tspan><tspan fill="#6c7086">              # executar o projeto</tspan></text>
+    <text x="34" y="276"><tspan fill="#f9e2af">6️⃣</tspan><tspan fill="#89b4fa">   ➜ </tspan><tspan fill="#89b4fa">http://localhost:3000</tspan><tspan fill="#6c7086">  # acessar a aplicação</tspan></text>
+    <text x="34" y="314"><tspan fill="#f9e2af">7️⃣</tspan><tspan fill="#a6e3a1"> $ </tspan><tspan fill="#cdd6f4">npm test</tspan><tspan fill="#a6e3a1">               ✔ todos os testes passaram</tspan></text>
+  </g>
+</svg>

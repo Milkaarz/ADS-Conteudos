@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <g text-anchor="middle">
+    <g>
+      <rect x="20" y="10" width="200" height="190" rx="16" fill="#eff6ff" stroke="#2563eb" stroke-width="3"/>
+      <rect x="20" y="10" width="200" height="12" rx="6" fill="#2563eb"/>
+      <text x="120" y="78" font-size="42">💬</text>
+      <text x="120" y="120" font-size="20" font-weight="800" fill="#1e40af">Comunicação</text>
+      <text x="120" y="150" font-size="14" fill="#3e4c59">Compartilhar</text>
+      <text x="120" y="170" font-size="14" fill="#3e4c59">conhecimento</text>
+    </g>
+    <g>
+      <rect x="240" y="10" width="200" height="190" rx="16" fill="#fff7ed" stroke="#ea580c" stroke-width="3"/>
+      <rect x="240" y="10" width="200" height="12" rx="6" fill="#ea580c"/>
+      <text x="340" y="78" font-size="42">🔧</text>
+      <text x="340" y="120" font-size="20" font-weight="800" fill="#9a3412">Manutenção</text>
+      <text x="340" y="150" font-size="14" fill="#3e4c59">Facilitar correções</text>
+      <text x="340" y="170" font-size="14" fill="#3e4c59">e evolução</text>
+    </g>
+    <g>
+      <rect x="460" y="10" width="200" height="190" rx="16" fill="#f0fdf4" stroke="#16a34a" stroke-width="3"/>
+      <rect x="460" y="10" width="200" height="12" rx="6" fill="#16a34a"/>
+      <text x="560" y="78" font-size="42">🤝</text>
+      <text x="560" y="120" font-size="20" font-weight="800" fill="#166534">Colaboração</text>
+      <text x="560" y="150" font-size="14" fill="#3e4c59">Permitir trabalho</text>
+      <text x="560" y="170" font-size="14" fill="#3e4c59">conjunto</text>
+    </g>
+    <g>
+      <rect x="680" y="10" width="200" height="190" rx="16" fill="#f5f3ff" stroke="#7c3aed" stroke-width="3"/>
+      <rect x="680" y="10" width="200" height="12" rx="6" fill="#7c3aed"/>
+      <text x="780" y="78" font-size="42">♾️</text>
+      <text x="780" y="120" font-size="20" font-weight="800" fill="#5b21b6">Continuidade</text>
+      <text x="780" y="150" font-size="14" fill="#3e4c59">Reduzir dependência</text>
+      <text x="780" y="170" font-size="14" fill="#3e4c59">de indivíduos</text>
+    </g>
+    <text x="450" y="242" font-size="18" font-weight="700" fill="#b20000">📌 Documentar é tornar o conhecimento reutilizável</text>
+  </g>
+</svg>

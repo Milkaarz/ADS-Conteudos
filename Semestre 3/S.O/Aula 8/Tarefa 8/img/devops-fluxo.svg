@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="240" viewBox="0 0 900 240" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#52606d"/></marker>
+  </defs>
+  <path d="M826 72C826 18 70 18 70 72" fill="none" stroke="#9aa5b1" stroke-width="2.5" stroke-dasharray="7 6" marker-end="url(#a)"/>
+  <text x="450" y="36" font-size="14" fill="#52606d" text-anchor="middle">🔁 feedback e monitoramento: o ciclo recomeça</text>
+  <g stroke="#52606d" stroke-width="3" marker-end="url(#a)">
+    <line x1="114" y1="120" x2="150" y2="120"/><line x1="240" y1="120" x2="276" y2="120"/><line x1="366" y1="120" x2="402" y2="120"/><line x1="492" y1="120" x2="528" y2="120"/><line x1="618" y1="120" x2="654" y2="120"/><line x1="744" y1="120" x2="780" y2="120"/>
+  </g>
+  <g text-anchor="middle">
+    <circle cx="70" cy="120" r="42" fill="#2563eb"/><text x="70" y="134" font-size="34">💻</text>
+    <circle cx="196" cy="120" r="42" fill="#16a34a"/><text x="196" y="134" font-size="34">🌿</text>
+    <circle cx="322" cy="120" r="42" fill="#0d9488"/><text x="322" y="134" font-size="34">🔀</text>
+    <circle cx="448" cy="120" r="42" fill="#ca8a04"/><text x="448" y="134" font-size="34">🏗️</text>
+    <circle cx="574" cy="120" r="42" fill="#ea580c"/><text x="574" y="134" font-size="34">🧪</text>
+    <circle cx="700" cy="120" r="42" fill="#7c3aed"/><text x="700" y="134" font-size="34">⚙️</text>
+    <circle cx="826" cy="120" r="42" fill="#b20000"/><text x="826" y="134" font-size="34">🚀</text>
+    <g font-size="15" font-weight="800" fill="#1f2933">
+      <text x="70" y="190">Desenvolvimento</text><text x="196" y="190">Git</text><text x="322" y="190">Pull Request</text><text x="448" y="190">Build</text><text x="574" y="190">Testes</text><text x="700" y="190">CI/CD</text><text x="826" y="190">Deploy</text>
+    </g>
+    <g font-size="12" fill="#616e7c">
+      <text x="70" y="210">código</text><text x="196" y="210">versão</text><text x="322" y="210">revisão</text><text x="448" y="210">compilação</text><text x="574" y="210">validação</text><text x="700" y="210">automação</text><text x="826" y="210">publicação</text>
+    </g>
+  </g>
+</svg>

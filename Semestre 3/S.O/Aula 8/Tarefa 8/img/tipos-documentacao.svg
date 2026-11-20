@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="280" viewBox="0 0 900 280" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <g>
+    <rect x="20" y="10" width="270" height="260" rx="16" fill="#ffffff" stroke="#2563eb" stroke-width="3"/>
+    <path d="M20 26a16 16 0 0 1 16-16h238a16 16 0 0 1 16 16v54H20z" fill="#2563eb"/>
+    <text x="155" y="45" font-size="21" font-weight="800" fill="#ffffff" text-anchor="middle">🛠️ Técnica</text>
+    <text x="155" y="68" font-size="14" fill="#dbeafe" text-anchor="middle">Como o sistema é construído?</text>
+    <g font-size="15" fill="#3e4c59"><text x="44" y="118">🏛️ Arquitetura</text><text x="44" y="148">🔌 APIs</text><text x="44" y="178">🗄️ Banco de dados</text><text x="44" y="208">🧩 Componentes</text><text x="44" y="238">⚙️ Configurações</text></g>
+  </g>
+  <g>
+    <rect x="315" y="10" width="270" height="260" rx="16" fill="#ffffff" stroke="#ea580c" stroke-width="3"/>
+    <path d="M315 26a16 16 0 0 1 16-16h238a16 16 0 0 1 16 16v54H315z" fill="#ea580c"/>
+    <text x="450" y="45" font-size="21" font-weight="800" fill="#ffffff" text-anchor="middle">🎯 De projeto</text>
+    <text x="450" y="68" font-size="14" fill="#ffedd5" text-anchor="middle">Por que e para que existe?</text>
+    <g font-size="15" fill="#3e4c59"><text x="339" y="118">🏁 Objetivos</text><text x="339" y="148">📋 Requisitos</text><text x="339" y="178">🧠 Decisões</text><text x="339" y="208">🗂️ Organização</text></g>
+  </g>
+  <g>
+    <rect x="610" y="10" width="270" height="260" rx="16" fill="#ffffff" stroke="#16a34a" stroke-width="3"/>
+    <path d="M610 26a16 16 0 0 1 16-16h238a16 16 0 0 1 16 16v54H610z" fill="#16a34a"/>
+    <text x="745" y="45" font-size="21" font-weight="800" fill="#ffffff" text-anchor="middle">🔄 De processo</text>
+    <text x="745" y="68" font-size="14" fill="#dcfce7" text-anchor="middle">Como a equipe trabalha?</text>
+    <g font-size="15" fill="#3e4c59"><text x="634" y="118">🌿 Branches</text><text x="634" y="148">📝 Commits</text><text x="634" y="178">🔀 Pull Requests</text><text x="634" y="208">🧪 Testes</text><text x="634" y="238">🚀 Pipeline e deploy</text></g>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="330" viewBox="0 0 900 330" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect x="10" y="10" width="880" height="310" rx="18" fill="#fff5f5" stroke="#b20000" stroke-width="3"/>
+  <g transform="translate(40,60)">
+    <path d="M90 0L170 30V100C170 160 130 195 90 210C50 195 10 160 10 100V30Z" fill="#b20000"/>
+    <rect x="58" y="88" width="64" height="52" rx="8" fill="#ffffff"/>
+    <path d="M70 88V72a20 20 0 0 1 40 0v16" fill="none" stroke="#ffffff" stroke-width="9"/>
+    <circle cx="90" cy="110" r="7" fill="#b20000"/><rect x="87" y="112" width="6" height="16" rx="3" fill="#b20000"/>
+    <text x="90" y="245" font-size="16" font-weight="800" fill="#b20000" text-anchor="middle">PROIBIDO NA DOC</text>
+  </g>
+  <text x="250" y="52" font-size="16" font-weight="800" fill="#b20000">🚫 NÃO COLOCAR</text>
+  <text x="590" y="52" font-size="16" font-weight="800" fill="#15803d">✅ EM VEZ DISSO</text>
+  <line x1="250" y1="66" x2="870" y2="66" stroke="#f3b4b4" stroke-width="2"/>
+  <g font-size="16" fill="#1f2933">
+    <text x="250" y="104">🔑 Senhas e credenciais</text><text x="590" y="104">Explicar como obter o acesso</text>
+    <text x="250" y="150">🎟️ Chaves de API e tokens</text><text x="590" y="150">API_KEY=sua_chave_aqui</text>
+    <text x="250" y="196">🪪 Dados pessoais / de clientes</text><text x="590" y="196">Usar dados fictícios</text>
+    <text x="250" y="242">📁 Arquivo .env com segredos</text><text x="590" y="242">Só .env.example + .gitignore</text>
+    <text x="250" y="288">🖧 Infraestrutura restrita</text><text x="590" y="288">Arquitetura em alto nível</text>
+  </g>
+  <g stroke="#f3b4b4" stroke-width="1" stroke-dasharray="4 4">
+    <line x1="250" y1="124" x2="870" y2="124"/><line x1="250" y1="170" x2="870" y2="170"/><line x1="250" y1="216" x2="870" y2="216"/><line x1="250" y1="262" x2="870" y2="262"/>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="170" viewBox="0 0 900 170" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#52606d"/></marker>
+  </defs>
+  <g stroke="#52606d" stroke-width="3" marker-end="url(#a)">
+    <line x1="165" y1="80" x2="196" y2="80"/><line x1="347" y1="80" x2="378" y2="80"/><line x1="529" y1="80" x2="560" y2="80"/><line x1="711" y1="80" x2="742" y2="80"/>
+  </g>
+  <g text-anchor="middle" font-size="13" fill="#3e4c59">
+    <rect x="20" y="25" width="145" height="110" rx="14" fill="#fdf2f8" stroke="#db2777" stroke-width="2.5"/>
+    <text x="92" y="62" font-size="28">👆</text><text x="92" y="92" font-size="15" font-weight="800" fill="#9d174d">Ação do usuário</text><text x="92" y="114">adicionar · marcar</text><text x="92" y="129">excluir</text>
+    <rect x="202" y="25" width="145" height="110" rx="14" fill="#fff7ed" stroke="#ea580c" stroke-width="2.5"/>
+    <text x="274" y="62" font-size="28">📝</text><text x="274" y="92" font-size="15" font-weight="800" fill="#9a3412">tarefas[ ]</text><text x="274" y="114">array em memória</text><text x="274" y="129">é alterado</text>
+    <rect x="384" y="25" width="145" height="110" rx="14" fill="#f0fdf4" stroke="#16a34a" stroke-width="2.5"/>
+    <text x="456" y="62" font-size="28">💾</text><text x="456" y="92" font-size="15" font-weight="800" fill="#166534">salvar()</text><text x="456" y="114">grava JSON no</text><text x="456" y="129">localStorage</text>
+    <rect x="566" y="25" width="145" height="110" rx="14" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5"/>
+    <text x="638" y="62" font-size="28">🔄</text><text x="638" y="92" font-size="15" font-weight="800" fill="#1e40af">render()</text><text x="638" y="114">redesenha</text><text x="638" y="129">a lista</text>
+    <rect x="748" y="25" width="145" height="110" rx="14" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2.5"/>
+    <text x="820" y="62" font-size="28">📊</text><text x="820" y="92" font-size="15" font-weight="800" fill="#5b21b6">Tela</text><text x="820" y="114">lista + barra</text><text x="820" y="129">de progresso</text>
+  </g>
+</svg>

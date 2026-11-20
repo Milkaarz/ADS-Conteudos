@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect width="900" height="300" rx="20" fill="#141414"/>
+  <g fill="#efe8d6">
+    <path d="M60 0h44v70a22 22 0 0 1-44 0z"/><path d="M796 0h44v70a22 22 0 0 1-44 0z"/>
+    <rect x="140" y="0" width="80" height="28" rx="10"/><rect x="230" y="0" width="80" height="28" rx="10"/><rect x="590" y="0" width="80" height="28" rx="10"/><rect x="680" y="0" width="80" height="28" rx="10"/>
+    <path d="M60 300h44v-60a22 22 0 0 0-44 0z"/><path d="M796 300h44v-60a22 22 0 0 0-44 0z"/>
+  </g>
+  <g fill="#ff9a1a">
+    <path transform="translate(120,110) scale(1.1)" d="M32 2C16 2 6 14 6 30v38l9-8 9 8 8-8 8 8 9-8 9 8V30C58 14 48 2 32 2z"/>
+    <path transform="translate(710,100) scale(1.2)" d="M32 2C16 2 6 14 6 30v38l9-8 9 8 8-8 8 8 9-8 9 8V30C58 14 48 2 32 2z"/>
+  </g>
+  <g fill="#141414">
+    <circle cx="145" cy="143" r="5.5"/><circle cx="165" cy="143" r="5.5"/>
+    <circle cx="737" cy="136" r="6"/><circle cx="759" cy="136" r="6"/>
+  </g>
+  <text x="450" y="150" font-family="'Arial Black', Impact, sans-serif" font-size="74" font-weight="900" fill="#ff4a1c" text-anchor="middle">Noite Sombria</text>
+  <text x="450" y="194" font-size="18" letter-spacing="5" fill="#efe8d6" text-anchor="middle">🎃 ORGANIZADOR DE HALLOWEEN · 31 DE OUTUBRO 🦇</text>
+  <text x="450" y="232" font-size="16" fill="#b3ab98" text-anchor="middle">⏳ Contagem regressiva · 🎭 Sorteio de fantasia · ✅ Lista de tarefas</text>
+</svg>

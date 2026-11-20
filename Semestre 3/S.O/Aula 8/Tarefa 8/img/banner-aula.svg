@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="240" viewBox="0 0 900 240" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect width="900" height="240" rx="18" fill="#e8ecee"/>
+  <rect width="14" height="240" rx="7" fill="#b20000"/>
+  <text x="50" y="68" font-size="17" fill="#b20000" font-weight="700" letter-spacing="3">FATEC · AULA 08</text>
+  <text x="50" y="122" font-size="44" font-weight="800" fill="#1f2933">Documentação de Software</text>
+  <text x="50" y="162" font-size="20" fill="#52606d">📚 Tornar o conhecimento reutilizável</text>
+  <text x="50" y="205" font-size="16" fill="#b20000" font-weight="600">👨‍🏫 Prof. Me. Deivison S. Takatu</text>
+  <g transform="translate(700,38)">
+    <rect x="34" y="0" width="120" height="155" rx="10" fill="#ffffff" stroke="#cbd2d9" stroke-width="2" transform="rotate(9 94 78)"/>
+    <rect x="10" y="10" width="120" height="155" rx="10" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+    <rect x="10" y="10" width="120" height="32" rx="10" fill="#1f2933"/>
+    <rect x="10" y="30" width="120" height="12" fill="#1f2933"/>
+    <text x="70" y="32" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="700">README.md</text>
+    <rect x="24" y="56" width="70" height="8" rx="4" fill="#b20000"/>
+    <rect x="24" y="72" width="92" height="5" rx="2.5" fill="#cbd2d9"/>
+    <rect x="24" y="84" width="80" height="5" rx="2.5" fill="#cbd2d9"/>
+    <rect x="24" y="100" width="56" height="8" rx="4" fill="#2563eb"/>
+    <rect x="24" y="116" width="92" height="5" rx="2.5" fill="#cbd2d9"/>
+    <rect x="24" y="128" width="64" height="5" rx="2.5" fill="#cbd2d9"/>
+    <circle cx="128" cy="158" r="24" fill="#16a34a"/>
+    <path d="M116 158l8 8 16-17" stroke="#ffffff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

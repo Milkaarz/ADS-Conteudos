@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect x="10" y="10" width="880" height="540" rx="14" fill="#141414" stroke="#3d3d3d" stroke-width="2"/>
+  <rect x="10" y="10" width="880" height="40" rx="14" fill="#2b2b2b"/>
+  <rect x="10" y="34" width="880" height="16" fill="#2b2b2b"/>
+  <circle cx="35" cy="30" r="6" fill="#ef4444"/><circle cx="55" cy="30" r="6" fill="#f59e0b"/><circle cx="75" cy="30" r="6" fill="#22c55e"/>
+  <rect x="100" y="18" width="520" height="24" rx="12" fill="#1c1c1c"/>
+  <text x="116" y="35" font-size="13" fill="#b3ab98">🔒 hallowenies.netlify.app</text>
+
+  <g fill="#efe8d6">
+    <path d="M232 62h30v52a15 15 0 0 1-30 0z"/><path d="M638 62h30v52a15 15 0 0 1-30 0z"/>
+  </g>
+  <g text-anchor="middle">
+    <g fill="#efe8d6"><rect x="275" y="64" width="80" height="72" rx="8"/><rect x="365" y="64" width="80" height="72" rx="8"/><rect x="455" y="64" width="80" height="72" rx="8"/><rect x="545" y="64" width="80" height="72" rx="8"/></g>
+    <g font-family="'Arial Black', Impact, sans-serif" font-size="26" fill="#141414"><text x="315" y="103">345</text><text x="405" y="103">07</text><text x="495" y="103">42</text><text x="585" y="103">18</text></g>
+    <g font-size="10" font-weight="700" letter-spacing="1.5" fill="#141414"><text x="315" y="124">DIAS</text><text x="405" y="124">HORAS</text><text x="495" y="124">MIN</text><text x="585" y="124">SEG</text></g>
+    <text x="450" y="200" font-family="'Arial Black', Impact, sans-serif" font-size="50" fill="#ff4a1c">Noite Sombria</text>
+    <text x="450" y="232" font-size="13" fill="#b3ab98">Organize sua festa: acompanhe a contagem, sorteie uma fantasia e controle as tarefas.</text>
+  </g>
+  <g font-size="11" letter-spacing="2" fill="#efe8d6"><text x="40" y="170">FANTASIAS</text><text x="40" y="188">DOCES</text><text x="40" y="206">BOA MÚSICA</text><text x="788" y="170">ORGANIZADOR</text><text x="788" y="188">DE HALLOWEEN</text><text x="788" y="206">31 DE OUTUBRO</text></g>
+
+  <rect x="40" y="255" width="820" height="280" rx="70" fill="#ff9a1a"/>
+
+  <rect x="70" y="280" width="370" height="230" rx="16" fill="#141414" stroke="#efe8d6" stroke-width="2"/>
+  <text x="92" y="314" font-family="'Arial Black', Impact, sans-serif" font-size="19" fill="#ff4a1c">🎭 Sorteador de fantasia</text>
+  <text x="92" y="340" font-size="12.5" fill="#efe8d6">Sem ideia do que vestir? Sorteie e salve a favorita.</text>
+  <text x="92" y="384" font-family="'Arial Black', Impact, sans-serif" font-size="28" fill="#4be07a">Vampiro</text>
+  <text x="92" y="405" font-size="13" fill="#b3ab98">estilo retrô anos 80</text>
+  <rect x="92" y="424" width="146" height="34" rx="17" fill="#ff4a1c"/><text x="165" y="446" font-size="13" font-weight="700" fill="#141414" text-anchor="middle">Sortear fantasia</text>
+  <rect x="248" y="424" width="140" height="34" rx="17" fill="#141414" stroke="#3d3d3d"/><text x="318" y="446" font-size="13" font-weight="700" fill="#efe8d6" text-anchor="middle">Salvar favorita</text>
+  <text x="92" y="488" font-size="12.5" fill="#b3ab98">⭐ Favorita: Bruxa minimalista</text>
+
+  <rect x="460" y="280" width="370" height="230" rx="16" fill="#141414" stroke="#efe8d6" stroke-width="2"/>
+  <text x="482" y="314" font-family="'Arial Black', Impact, sans-serif" font-size="19" fill="#ff4a1c">✅ Lista da festa</text>
+  <rect x="482" y="328" width="326" height="10" rx="5" fill="#3d3d3d"/><rect x="482" y="328" width="109" height="10" rx="5" fill="#4be07a"/>
+  <rect x="482" y="350" width="224" height="32" rx="16" fill="#141414" stroke="#3d3d3d" stroke-width="2"/><text x="498" y="371" font-size="13" fill="#6b6b6b">Nova tarefa</text>
+  <rect x="714" y="350" width="94" height="32" rx="16" fill="#ff4a1c"/><text x="761" y="371" font-size="13" font-weight="700" fill="#141414" text-anchor="middle">Adicionar</text>
+  <g font-size="14">
+    <rect x="482" y="398" width="16" height="16" rx="3" fill="#4be07a"/><path d="M485 406l4 4 7-8" stroke="#141414" stroke-width="2.5" fill="none"/>
+    <text x="508" y="411" fill="#4be07a" text-decoration="line-through">Comprar doces</text><line x1="508" y1="406" x2="606" y2="406" stroke="#4be07a" stroke-width="1.5"/>
+    <text x="800" y="412" fill="#b3ab98" font-size="18">×</text>
+    <line x1="482" y1="426" x2="808" y2="426" stroke="#3d3d3d" stroke-dasharray="4 4"/>
+    <rect x="482" y="436" width="16" height="16" rx="3" fill="none" stroke="#efe8d6" stroke-width="2"/><text x="508" y="449" fill="#efe8d6">Decorar a casa</text><text x="800" y="450" fill="#b3ab98" font-size="18">×</text>
+    <line x1="482" y1="464" x2="808" y2="464" stroke="#3d3d3d" stroke-dasharray="4 4"/>
+    <rect x="482" y="474" width="16" height="16" rx="3" fill="none" stroke="#efe8d6" stroke-width="2"/><text x="508" y="487" fill="#efe8d6">Definir a fantasia</text><text x="800" y="488" fill="#b3ab98" font-size="18">×</text>
+  </g>
+</svg>
