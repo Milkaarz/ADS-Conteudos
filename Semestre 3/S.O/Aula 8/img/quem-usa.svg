@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="330" viewBox="0 0 900 330" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <g stroke="#9aa5b1" stroke-width="3" stroke-dasharray="6 6">
+    <line x1="450" y1="150" x2="230" y2="70"/>
+    <line x1="450" y1="150" x2="230" y2="230"/>
+    <line x1="450" y1="150" x2="670" y2="70"/>
+    <line x1="450" y1="150" x2="670" y2="230"/>
+    <line x1="450" y1="150" x2="450" y2="265"/>
+  </g>
+  <circle cx="450" cy="150" r="78" fill="#1f2933"/>
+  <text x="450" y="142" font-size="40" text-anchor="middle">📄</text>
+  <text x="450" y="182" font-size="17" font-weight="800" fill="#ffffff" text-anchor="middle">Documentação</text>
+  <g font-size="14" fill="#3e4c59">
+    <rect x="20" y="35" width="230" height="70" rx="14" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5"/>
+    <text x="38" y="66" font-size="19" font-weight="800" fill="#1e40af">👩‍💻 Dev</text>
+    <text x="38" y="90">Começa sem depender da equipe</text>
+    <rect x="20" y="195" width="230" height="70" rx="14" fill="#f0fdf4" stroke="#16a34a" stroke-width="2.5"/>
+    <text x="38" y="226" font-size="19" font-weight="800" fill="#166534">🧪 Tester</text>
+    <text x="38" y="250">Executa e valida os testes</text>
+    <rect x="650" y="35" width="230" height="70" rx="14" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2.5"/>
+    <text x="668" y="66" font-size="19" font-weight="800" fill="#5b21b6">📊 Gestor</text>
+    <text x="668" y="90">Acompanha processos e decisões</text>
+    <rect x="650" y="195" width="230" height="70" rx="14" fill="#fdf2f8" stroke="#db2777" stroke-width="2.5"/>
+    <text x="668" y="226" font-size="19" font-weight="800" fill="#9d174d">🙋 Usuário</text>
+    <text x="668" y="250">Aprende a usar o produto</text>
+    <rect x="335" y="250" width="230" height="70" rx="14" fill="#fff7ed" stroke="#ea580c" stroke-width="2.5"/>
+    <text x="353" y="281" font-size="19" font-weight="800" fill="#9a3412">⚙️ DevOps</text>
+    <text x="353" y="305">Pipeline, ambientes e deploy</text>
+  </g>
+</svg>

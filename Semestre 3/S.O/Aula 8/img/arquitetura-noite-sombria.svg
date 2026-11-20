@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="410" viewBox="0 0 900 410" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#52606d"/></marker>
+  </defs>
+  <rect x="60" y="14" width="300" height="56" rx="14" fill="#e6fffa" stroke="#0d9488" stroke-width="2.5"/>
+  <text x="210" y="48" font-size="17" font-weight="800" fill="#115e59" text-anchor="middle">☁️ Netlify (hospedagem estática)</text>
+  <rect x="540" y="14" width="300" height="56" rx="14" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="690" y="48" font-size="17" font-weight="800" fill="#1e40af" text-anchor="middle">🔤 Google Fonts</text>
+  <g stroke="#52606d" stroke-width="2.5" marker-end="url(#a)"><line x1="210" y1="72" x2="210" y2="114"/><line x1="690" y1="72" x2="690" y2="114"/></g>
+  <text x="222" y="98" font-size="13" fill="#52606d">index.html</text>
+  <text x="702" y="98" font-size="13" fill="#52606d">fontes (CSS)</text>
+
+  <rect x="30" y="118" width="840" height="280" rx="18" fill="#f8fafc" stroke="#1f2933" stroke-width="3"/>
+  <text x="52" y="148" font-size="17" font-weight="800" fill="#1f2933">🌐 Navegador do usuário</text>
+
+  <rect x="52" y="162" width="550" height="218" rx="14" fill="#fff7ed" stroke="#ea580c" stroke-width="2.5"/>
+  <text x="72" y="190" font-size="16" font-weight="800" fill="#9a3412">📄 index.html (arquivo único)</text>
+
+  <g font-size="13.5" fill="#3e4c59">
+    <rect x="70" y="204" width="140" height="160" rx="10" fill="#ffffff" stroke="#db2777" stroke-width="2"/>
+    <text x="140" y="228" font-size="15" font-weight="800" fill="#9d174d" text-anchor="middle">🎨 &lt;style&gt;</text>
+    <text x="84" y="258">• Tema escuro</text><text x="84" y="282">• Grid / Flexbox</text><text x="84" y="306">• Responsivo</text><text x="84" y="330">• Acessibilidade</text>
+
+    <rect x="222" y="204" width="140" height="160" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+    <text x="292" y="228" font-size="15" font-weight="800" fill="#1e40af" text-anchor="middle">🧱 &lt;body&gt;</text>
+    <text x="236" y="258">• Header</text><text x="236" y="282">• Contagem</text><text x="236" y="306">• Card fantasia</text><text x="236" y="330">• Card tarefas</text>
+
+    <rect x="374" y="204" width="214" height="160" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
+    <text x="481" y="228" font-size="15" font-weight="800" fill="#5b21b6" text-anchor="middle">⚙️ &lt;script&gt;</text>
+    <g font-family="Consolas, Menlo, monospace" font-size="13"><text x="388" y="258">store.get / set</text><text x="388" y="282">alvo() · tick()</text><text x="388" y="306">sort · fav</text><text x="388" y="330">render() · salvar()</text></g>
+  </g>
+
+  <ellipse cx="755" cy="214" rx="85" ry="16" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <path d="M670 214v120a85 16 0 0 0 170 0V214" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <ellipse cx="755" cy="214" rx="85" ry="16" fill="#bbf7d0" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="755" y="262" font-size="16" font-weight="800" fill="#166534" text-anchor="middle">💾 localStorage</text>
+  <g font-family="Consolas, Menlo, monospace" font-size="14" fill="#166534" text-anchor="middle"><text x="755" y="292">"fav"</text><text x="755" y="316">"tarefas"</text></g>
+
+  <line x1="592" y1="284" x2="666" y2="284" stroke="#52606d" stroke-width="2.5" marker-start="url(#a)" marker-end="url(#a)"/>
+  <text x="629" y="274" font-size="12" font-weight="700" fill="#52606d" text-anchor="middle">JSON</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" viewBox="0 0 900 320" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect x="10" y="10" width="410" height="300" rx="18" fill="#fdecec" stroke="#b20000" stroke-width="3"/>
+  <text x="215" y="58" font-size="24" font-weight="800" fill="#b20000" text-anchor="middle">😰 Sem documentação</text>
+  <g font-size="16" fill="#3e4c59">
+    <text x="40" y="112">❌ Só “o Fulano” sabe rodar o sistema</text>
+    <text x="40" y="154">❌ “Na minha máquina funciona!”</text>
+    <text x="40" y="196">❌ Perguntas repetidas no WhatsApp</text>
+    <text x="40" y="238">❌ Conhecimento vai embora com a pessoa</text>
+    <text x="40" y="280">❌ Novato leva dias para começar</text>
+  </g>
+  <circle cx="450" cy="160" r="28" fill="#1f2933"/>
+  <path d="M438 160h22m-9-10l10 10-10 10" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="480" y="10" width="410" height="300" rx="18" fill="#e7f6ec" stroke="#16a34a" stroke-width="3"/>
+  <text x="685" y="58" font-size="24" font-weight="800" fill="#15803d" text-anchor="middle">😎 Com documentação</text>
+  <g font-size="16" fill="#3e4c59">
+    <text x="510" y="112">✅ Qualquer pessoa roda o projeto</text>
+    <text x="510" y="154">✅ Ambiente igual para todos</text>
+    <text x="510" y="196">✅ As respostas estão no README</text>
+    <text x="510" y="238">✅ O conhecimento fica no repositório</text>
+    <text x="510" y="280">✅ Novato produz no primeiro dia</text>
+  </g>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="440" viewBox="0 0 900 440" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect x="30" y="10" width="400" height="420" rx="14" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <rect x="30" y="10" width="400" height="40" rx="14" fill="#1f2933"/>
+  <rect x="30" y="36" width="400" height="14" fill="#1f2933"/>
+  <circle cx="54" cy="30" r="6" fill="#ef4444"/><circle cx="74" cy="30" r="6" fill="#f59e0b"/><circle cx="94" cy="30" r="6" fill="#22c55e"/>
+  <text x="250" y="35" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">📄 README.md</text>
+  <g font-family="Consolas, Menlo, monospace" font-size="15" font-weight="700">
+    <text x="52" y="86" fill="#b20000" font-size="18"># Nome do Projeto</text>
+    <text x="52" y="122" fill="#2563eb">## Tecnologias</text>
+    <text x="52" y="158" fill="#2563eb">## Pré-requisitos</text>
+    <text x="52" y="194" fill="#2563eb">## Instalação</text>
+    <text x="52" y="230" fill="#2563eb">## Configuração</text>
+    <text x="52" y="266" fill="#2563eb">## Execução</text>
+    <text x="52" y="302" fill="#2563eb">## Testes</text>
+    <text x="52" y="338" fill="#2563eb">## Estrutura</text>
+    <text x="52" y="374" fill="#2563eb">## Contribuição</text>
+    <text x="52" y="410" fill="#2563eb">## Links</text>
+  </g>
+  <g fill="#e4e7eb">
+    <rect x="270" y="76" width="140" height="8" rx="4"/><rect x="250" y="112" width="160" height="8" rx="4"/><rect x="270" y="148" width="140" height="8" rx="4"/><rect x="230" y="184" width="180" height="8" rx="4"/><rect x="260" y="220" width="150" height="8" rx="4"/><rect x="230" y="256" width="180" height="8" rx="4"/><rect x="210" y="292" width="200" height="8" rx="4"/><rect x="230" y="328" width="180" height="8" rx="4"/><rect x="270" y="364" width="140" height="8" rx="4"/><rect x="190" y="400" width="220" height="8" rx="4"/>
+  </g>
+  <g stroke="#9aa5b1" stroke-width="2" stroke-dasharray="4 4">
+    <line x1="430" y1="80" x2="480" y2="80"/><line x1="430" y1="116" x2="480" y2="116"/><line x1="430" y1="152" x2="480" y2="152"/><line x1="430" y1="188" x2="480" y2="188"/><line x1="430" y1="224" x2="480" y2="224"/><line x1="430" y1="260" x2="480" y2="260"/><line x1="430" y1="296" x2="480" y2="296"/><line x1="430" y1="332" x2="480" y2="332"/><line x1="430" y1="368" x2="480" y2="368"/><line x1="430" y1="404" x2="480" y2="404"/>
+  </g>
+  <g font-size="17" fill="#1f2933">
+    <text x="490" y="86">📌 O que é e para que serve</text>
+    <text x="490" y="122">🧰 Stack e versões</text>
+    <text x="490" y="158">✅ O que instalar antes</text>
+    <text x="490" y="194">⚙️ Passo a passo reproduzível</text>
+    <text x="490" y="230">🔐 Variáveis (.env.example)</text>
+    <text x="490" y="266">▶️ Como iniciar e acessar</text>
+    <text x="490" y="302">🧪 Como validar que funciona</text>
+    <text x="490" y="338">🗂️ Pastas principais</text>
+    <text x="490" y="374">🤝 Branches, commits e PRs</text>
+    <text x="490" y="410">🔗 Deploy, docs e contato</text>
+  </g>
+</svg>
