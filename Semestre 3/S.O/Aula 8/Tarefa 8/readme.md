@@ -1,327 +1,267 @@
-# 🎃 Noite Sombria
+<p align="center">
+  <img src="img/banner-noite-sombria.svg" alt="Noite Sombria: Organizador de Halloween" width="100%">
+</p>
 
-> 🦇 **Organizador web de Halloween:** contagem regressiva, sorteio de fantasia e lista de tarefas da festa, tudo em uma única página.
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Netlify">
+  <img src="https://img.shields.io/badge/status-online-4be07a?style=for-the-badge" alt="Status: online">
+</p>
 
-🧛 **Acesse em:** https://hallowenies.netlify.app/
+# 🎃 Noite Sombria: Organizador de Halloween 🦇
 
-| 🏷️ Item | 📋 Detalhe |
-| --- | --- |
-| **Tipo** | Aplicação web de página única (HTML, CSS e JavaScript puros) |
-| **Tema visual** | Preto, creme, vermelho-laranja e verde, inspirado em pôsteres de Halloween 👻 |
-| **Backend / banco de dados** | Nenhum. Os dados ficam no navegador (`localStorage`) |
-| **Funciona offline?** | Parcialmente: o código roda sem internet se a página já estiver em cache, mas as fontes vêm do Google Fonts e, sem elas, o navegador usa fontes de reserva |
-| **Custo** | Gratuito 🆓 |
+Aplicação web de página única 👻 para organizar uma festa de Halloween: ⏳ contagem regressiva até 31 de outubro, 🎭 sorteador de fantasias e ✅ lista de tarefas com barra de progresso.
 
----
+🔗 **Demo online:** https://hallowenies.netlify.app/
 
-## 🗺️ Índice
-
-1. [🎯 Objetivo](#-objetivo)
-2. [⚠️ Problema](#️-problema)
-3. [📦 Escopo](#-escopo)
-4. [⚙️ Requisitos funcionais](#️-requisitos-funcionais)
-5. [🛡️ Requisitos não funcionais](#️-requisitos-não-funcionais)
-6. [🧰 Tecnologias utilizadas](#-tecnologias-utilizadas)
-7. [🏗️ Arquitetura](#️-arquitetura)
-8. [🚀 Instalação e execução](#-instalação-e-execução)
-9. [🔧 Configuração](#-configuração)
-10. [🔌 APIs, banco de dados e variáveis de ambiente](#-apis-banco-de-dados-e-variáveis-de-ambiente)
-11. [🧪 Testes](#-testes)
-12. [🌐 Deploy](#-deploy)
-13. [📖 Glossário](#-glossário)
+<p align="center">
+  <img src="img/mockup-noite-sombria.svg" alt="Ilustração da tela do Noite Sombria: contagem, sorteador de fantasia e lista da festa" width="100%">
+  <br><sub>🖼️ Ilustração da interface da aplicação</sub>
+</p>
 
 ---
 
-## 🎯 Objetivo
+## 🗺️ Sumário
 
-Oferecer uma ferramenta web **simples e gratuita** que ajude pessoas a planejar e aproveitar o Halloween (**31 de outubro**), reunindo em um só lugar:
-
-- ⏳ a **contagem regressiva** até a data;
-- 🧛 a **escolha da fantasia**;
-- ✅ a **organização das tarefas** da festa.
-
-**Objetivos específicos**
-
-| 🏁 Objetivo | 💡 Na prática |
-| --- | --- |
-| Reduzir o tempo gasto decidindo a fantasia | Um clique entrega uma ideia pronta, como "Bruxa retrô anos 80" |
-| Acompanhar o progresso dos preparativos | Uma barra mostra quanto da lista já foi feito |
-| Funcionar sem cadastro, instalação ou conta | Basta abrir a página |
+| | | |
+|---|---|---|
+| 🎯 1. Objetivo | 🤔 2. Problema | 📐 3. Escopo |
+| 📋 4. Requisitos | 🧰 5. Tecnologias | 🏛️ 6. Arquitetura |
+| 🗂️ 7. Estrutura | ✅ 8. Pré-requisitos | ⚙️ 9. Instalação e execução |
+| 🔐 10. Configuração | 💾 11. Armazenamento | 🧪 12. Testes |
+| 🚀 13. Deploy | 🤝 14. Contribuição | 🐛 15. Problemas conhecidos |
 
 ---
 
-## ⚠️ Problema
+## 🎯 1. Objetivo
 
-Quem organiza uma festa de Halloween costuma **deixar tudo para a última hora** 😱:
+Oferecer uma ferramenta simples ✨, rápida ⚡ e sem cadastro 🙅 para quem está organizando uma festa de Halloween. Com ela é possível acompanhar quanto tempo falta para o evento ⏳, decidir uma fantasia 🎭 e controlar as tarefas da preparação ✅.
 
-1. 📝 **Tarefas espalhadas** em mensagens, notas e na memória.
-2. 🤔 **Indecisão** na escolha da fantasia.
-3. ⏰ **Falta de noção de prazo.**
+## 🤔 2. Problema
 
-> 💥 **Resultado:** estresse, compras apressadas e itens esquecidos.
+Organizar uma festa temática costuma envolver anotações espalhadas 📝 (papel, bloco de notas, mensagens 💬), indecisão na escolha da fantasia 🤷 e pouca noção do prazo ⌛. O **Noite Sombria** reúne essas três necessidades em uma única página 📄, que funciona no celular 📱 e no computador 💻 e guarda os dados no próprio navegador 💾.
 
-| 😖 Dor do usuário | 🛠️ Solução |
-| --- | --- |
-| Tarefas soltas e esquecidas | Lista única com barra de progresso ✅ |
-| Dificuldade de escolher a fantasia | Sorteio de ideias de fantasia 🎲 |
-| Sensação de que "ainda dá tempo" | Contagem regressiva sempre visível ⏳ |
+## 📐 3. Escopo
 
----
+**✅ Dentro do escopo**
+- ⏳ Contagem regressiva até 31 de outubro;
+- 🎭 Sorteio aleatório de fantasia (personagem + estilo) e salvamento de uma favorita ⭐;
+- 📝 Lista de tarefas: adicionar ➕, marcar como concluída ☑️, excluir 🗑️ e acompanhar o progresso 📊;
+- 💾 Persistência local dos dados (`localStorage`);
+- 📱 Layout responsivo com tema escuro 🌑.
 
-## 📦 Escopo
+**❌ Fora do escopo**
+- 🔑 Login, contas de usuário ou sincronização entre dispositivos;
+- 🗄️ Backend, banco de dados ou API externa;
+- 👥 Compartilhamento da lista com outras pessoas;
+- 💌 Convites, lista de convidados ou pagamentos 💳.
 
-### ✅ Dentro do escopo
+## 📋 4. Requisitos
 
-- ⏳ Contagem regressiva até 31/10, com dias, horas, minutos e segundos.
-- 🎲 Sorteio de fantasias por combinação de personagem e estilo.
-- 📋 Lista de tarefas com marcação, exclusão e progresso.
-- 💾 Salvamento local dos dados no navegador.
-- 📱 Interface responsiva, no tema escuro inspirado em pôsteres de Halloween.
+### ⚙️ 4.1 Requisitos funcionais
 
-### 🚫 Fora do escopo
+| ID | Requisito |
+|---|---|
+| ⏳ RF01 | Exibir uma contagem regressiva (dias, horas, minutos e segundos) até 31/10, atualizada a cada segundo. |
+| 🎉 RF02 | Em 31/10, trocar a contagem pela mensagem "Hoje! Feliz Halloween". |
+| 📅 RF03 | Depois de 31/10, passar a contar até o Halloween do ano seguinte. |
+| 🎲 RF04 | Sortear uma fantasia combinando um personagem aleatório (10 opções) com um estilo aleatório (8 opções). |
+| ⭐ RF05 | Salvar a fantasia sorteada como favorita e exibi-la mesmo após recarregar a página. |
+| ⚠️ RF06 | Mostrar um aviso se o usuário tentar salvar uma favorita sem ter sorteado antes. |
+| ➕ RF07 | Adicionar tarefas à lista (texto de até 80 caracteres; texto vazio é ignorado). |
+| ☑️ RF08 | Marcar e desmarcar tarefas como concluídas. |
+| 🗑️ RF09 | Excluir tarefas. |
+| 📊 RF10 | Exibir uma barra de progresso com a porcentagem de tarefas concluídas. |
+| 📭 RF11 | Exibir uma mensagem quando a lista estiver vazia. |
+| 📝 RF12 | Carregar uma lista inicial padrão no primeiro acesso ("Comprar doces" 🍬, "Decorar a casa" 🏚️, "Definir a fantasia" 🧛). |
 
-- 🔐 Contas de usuário e login.
-- 🔄 Sincronização entre dispositivos.
-- 🛒 Compra de produtos ou integração com lojas.
-- 💌 Convites, confirmação de presença e chat.
-- 📲 Aplicativo nativo para Android ou iOS.
+### 🛡️ 4.2 Requisitos não funcionais
 
-### 👥 Público e premissas
+| ID | Requisito |
+|---|---|
+| 🌐 RNF01 | **Portabilidade:** funciona em qualquer navegador moderno, sem instalação. |
+| 📱 RNF02 | **Responsividade:** layout adaptado a telas a partir de 320 px, com ajustes abaixo de 640 px e suporte a *safe areas* (notch). |
+| ⚡ RNF03 | **Desempenho:** um único arquivo HTML, sem dependências JavaScript e sem etapa de build. |
+| 💾 RNF04 | **Persistência:** os dados ficam no `localStorage` do navegador; se ele estiver indisponível, a aplicação continua funcionando sem salvar. |
+| ♿ RNF05 | **Acessibilidade:** `aria-live` no resultado do sorteio, `aria-label` em campos e botões, foco visível (`:focus-visible`) e respeito a `prefers-reduced-motion`. |
+| 🕵️ RNF06 | **Privacidade:** nenhum dado do usuário é enviado a servidores. |
+| 🔐 RNF07 | **Segurança:** os textos das tarefas são inseridos com `textContent`, o que evita injeção de HTML (XSS). |
 
-| 🔖 Tema | 📌 Descrição |
-| --- | --- |
-| **Público** | Pessoas de 12 anos ou mais que organizam ou participam de festas temáticas |
-| **Premissa** | O usuário possui um navegador moderno |
-| **Restrição** | Os dados ficam só no aparelho. ⚠️ Limpar o navegador apaga a lista |
+## 🧰 5. Tecnologias
 
----
+| Tecnologia | 🔧 Uso |
+|---|---|
+| 🧱 HTML5 | Estrutura da página (`lang="pt-BR"`) |
+| 🎨 CSS3 | Estilo com variáveis CSS, Grid, Flexbox, `clamp()` e media queries |
+| ⚙️ JavaScript (ES6+, sem framework) | Lógica da contagem, do sorteio e das tarefas |
+| 💾 Web Storage API (`localStorage`) | Persistência dos dados no navegador |
+| 🔤 Google Fonts | Fontes *Rubik Wet Paint*, *Bagel Fat One* e *Archivo* |
+| 👻 SVG inline | Fantasmas decorativos e textura de ruído do fundo |
+| ☁️ Netlify | Hospedagem estática e deploy |
 
-## ⚙️ Requisitos funcionais
+📦 Não há gerenciador de pacotes, bundler nem dependências npm.
 
-**Prioridade:** 🔴 Alta · 🟡 Média · 🟢 Baixa
+## 🏛️ 6. Arquitetura
 
-| Código | Requisito | Prioridade |
-| --- | --- | --- |
-| **RF01** | Exibir o tempo restante até o próximo 31 de outubro, atualizado a cada segundo | 🔴 |
-| **RF02** | Sortear uma fantasia combinando personagem e estilo a cada clique | 🔴 |
-| **RF03** | Salvar uma fantasia favorita e exibi-la ao reabrir o sistema | 🟡 |
-| **RF04** | Adicionar tarefas, com texto de até 80 caracteres | 🔴 |
-| **RF05** | Marcar uma tarefa como concluída ou desfazer a marcação | 🔴 |
-| **RF06** | Excluir tarefas | 🟡 |
-| **RF07** | Mostrar a porcentagem de tarefas concluídas em uma barra de progresso | 🟡 |
-| **RF08** | Manter tarefas e favorita salvas entre as visitas | 🔴 |
-| **RF09** | Exibir uma mensagem quando a lista estiver vazia | 🟢 |
+Aplicação **estática, 100% client-side** 🌐, sem backend:
 
----
+<p align="center">
+  <img src="img/arquitetura-noite-sombria.svg" alt="Diagrama de arquitetura: Netlify e Google Fonts entregam o index.html ao navegador, que usa o localStorage" width="100%">
+</p>
 
-## 🛡️ Requisitos não funcionais
+### 🧩 Componentes principais
 
-| Código | Categoria | Requisito |
-| --- | --- | --- |
-| **RNF01** | 🙂 Usabilidade | Ações em até dois cliques, com textos claros em português |
-| **RNF02** | ⚡ Desempenho | Carregar em menos de 2 s em 4G e responder às ações em menos de 100 ms |
-| **RNF03** | 📱 Responsividade | Funcionar a partir de 360 px de largura, sem rolagem horizontal |
-| **RNF04** | ♿ Acessibilidade | Foco visível no teclado, contraste adequado, rótulos nos campos e respeito à preferência de movimento reduzido |
-| **RNF05** | 🌐 Compatibilidade | Versões recentes de Chrome, Firefox, Safari e Edge |
-| **RNF06** | 🔒 Privacidade | Nenhum dado pessoal enviado a servidores |
-| **RNF07** | 🧱 Confiabilidade | Continuar funcionando na sessão se o armazenamento local estiver indisponível |
-| **RNF08** | 🧹 Manutenibilidade | Código em um único arquivo HTML, organizado por seções |
+| Componente | 🔩 Elementos / funções | 🎯 Responsabilidade |
+|---|---|---|
+| 🔎 **Helper `$`** | `$(id)` | Atalho para `document.getElementById`. |
+| 💾 **`store`** | `get(k, padrão)`, `set(k, valor)` | Ler e gravar JSON no `localStorage`, com `try/catch` para modo privado ou armazenamento bloqueado. |
+| ⏳ **Contagem regressiva** | `alvo()`, `tick()`, `#count` | Calcular a próxima data de 31/10 e renderizar dias, horas, minutos e segundos a cada 1 s (`setInterval`). |
+| 🎭 **Sorteador de fantasia** | `per[]`, `est[]`, `#sort`, `#fav`, `#fant`, `#favtxt` | Combinar personagem + estilo e salvar a favorita. |
+| ✅ **Lista da festa** | `tarefas[]`, `render()`, `salvar()`, `#f`, `#lista`, `#bar`, `#vazio` | CRUD das tarefas, barra de progresso e estado vazio. |
 
----
+### 🔄 Fluxo das tarefas
 
-## 🧰 Tecnologias utilizadas
+<p align="center">
+  <img src="img/fluxo-tarefas.svg" alt="Fluxo: ação do usuário, array tarefas, salvar(), render() e tela" width="100%">
+</p>
 
-| 🔧 Tecnologia | 📝 Uso no projeto |
-| --- | --- |
-| **HTML5** | Estrutura da página, com rótulos e atributos de acessibilidade (`aria-label`, `aria-live`) |
-| **CSS3** | Variáveis CSS (`:root`), Flexbox, Grid, `clip-path`/`border-radius` para os dentes e presas, textura de grão com SVG embutido, `prefers-reduced-motion` |
-| **JavaScript (ES6+)** | Toda a lógica, sem frameworks nem bibliotecas |
-| **Web Storage API (`localStorage`)** | Persistência de tarefas e fantasia favorita |
-| **SVG inline** | Fantasmas decorativos |
-| **Google Fonts** | Rubik Wet Paint (título), Bagel Fat One (destaques) e Archivo (texto) |
-| **Netlify** | Hospedagem estática |
+👆 Ação do usuário → 📝 altera o array `tarefas` → 💾 `salvar()` grava no `localStorage` → 🔄 `render()` redesenha a lista e a barra de progresso 📊.
 
-> ℹ️ Não há `package.json`, etapa de build, backend nem dependências para instalar.
+## 🗂️ 7. Estrutura do projeto
 
----
-
-## 🏗️ Arquitetura
-
-A aplicação é **estática e do lado do cliente**: um único arquivo `index.html` contém estrutura, estilos e scripts. Não há servidor próprio.
-
-```text
-┌───────────────────────── Navegador ─────────────────────────┐
-│                                                             │
-│   index.html                                                │
-│   ├── 🎨 <style>   → tema, layout, responsividade           │
-│   ├── 🧱 <body>    → cabeçalho + aplicativo                 │
-│   └── ⚙️ <script>  → lógica                                 │
-│          │                                                  │
-│          ▼                                                  │
-│   💾 localStorage  (chaves: "fav" e "tarefas")              │
-└─────────────────────────────────────────────────────────────┘
-          ▲
-          │ somente carrega o arquivo e as fontes
-   🌐 Netlify (HTML)      🔤 Google Fonts (CSS das fontes)
+```
+📁 noite-sombria/
+├── 📄 index.html    # 🧱 HTML + 🎨 CSS (<style>) + ⚙️ JS (<script>)
+├── 📂 img/          # 🖼️ ilustrações usadas neste README
+└── 📘 README.md     # 📚 esta documentação
 ```
 
-### 🧩 Organização dos componentes
+> 💡 Como o projeto é pequeno, tudo fica em um único arquivo. Se ele crescer, a sugestão é separar em `css/style.css` e `js/app.js`.
 
-| 🧱 Componente | 📍 Elemento | ⚙️ Função (JavaScript) | 📋 Requisitos |
-| --- | --- | --- | --- |
-| **Contagem regressiva** ("dentes") | `#count` | `alvo()` calcula a data do próximo 31/10; `tick()` redesenha a cada segundo | RF01 |
-| **Sorteador de fantasia** | `#fant`, `#sort`, `#fav`, `#favtxt` | Listas `per` (personagens) e `est` (estilos); `showFav()` | RF02, RF03 |
-| **Lista da festa** | `#f`, `#novo`, `#lista`, `#vazio` | `render()` desenha a lista; `salvar()` grava e redesenha | RF04 a RF07, RF09 |
-| **Barra de progresso** | `#bar` | Atualizada dentro de `render()` | RF07 |
-| **Camada de armazenamento** | objeto `store` | `store.get(chave, padrão)` e `store.set(chave, valor)`, ambos com `try/catch` | RF08, RNF07 |
+## ✅ 8. Pré-requisitos
 
-### 🔁 Fluxo de dados
+| Item | 🔢 Versão | Obrigatório? |
+|---|---|---|
+| 🌐 Navegador moderno (Chrome, Edge, Firefox, Safari) | Versões atuais | ✅ Sim |
+| 🌿 Git | 2.x ou superior | 📥 Só para clonar |
+| 🖥️ Servidor HTTP local (VS Code *Live Server*, Python 3 🐍 ou Node.js 🟢) | Qualquer versão | ➖ Opcional |
+| 📶 Conexão com a internet | — | ➖ Opcional (só para carregar as fontes do Google; sem ela, são usadas fontes de fallback) |
 
-```text
- Ação do usuário (clique / envio de formulário)
-          │
-          ▼
- Atualiza o array em memória  (ex.: tarefas.push(...))
-          │
-          ▼
- salvar() ──► store.set() ──► localStorage
-          │
-          ▼
- render() ──► redesenha a lista e a barra de progresso
-```
-
-### 📁 Estrutura sugerida do repositório
-
-```text
-noite-sombria/
-├── index.html      # aplicação completa
-├── README.md       # esta documentação
-└── netlify.toml    # (opcional) configuração de deploy
-```
-
----
-
-## 🚀 Instalação e execução
-
-### ✅ Pré-requisitos
-
-| 📦 Item | 🔖 Obrigatório? | 📝 Observação |
-| --- | --- | --- |
-| Navegador moderno (Chrome, Firefox, Safari ou Edge) | Sim | Versões recentes |
-| Git | Para clonar o repositório | Opcional se baixar o ZIP |
-| Python 3 **ou** Node.js | Não | Só para abrir um servidor local, se preferir |
-
-### 📥 Instalação
+## ⚙️ 9. Instalação e execução
 
 ```bash
-git clone https://github.com/Milkaarz/noite-sombria.git
-cd noite-sombria
-```
+# 1️⃣ Clonar o repositório
+git clone https://github.com/<seu-usuario>/<nome-do-repositorio>.git
 
-### ▶️ Execução
+# 2️⃣ Acessar a pasta
+cd <nome-do-repositorio>
 
-**Opção 1: abrir direto.** Dê dois cliques em `index.html`.
+# 3️⃣ Instalar dependências
+#    → não há dependências a instalar 🎉
 
-**Opção 2: servidor local (recomendado).**
-
-```bash
-# com Python 3
-python3 -m http.server 8000
-
-# ou com Node.js
+# 4️⃣ Executar (escolha uma opção)
+#    a) Abrir o arquivo diretamente no navegador (duplo clique em index.html)
+#    b) 🐍 Python 3:
+python -m http.server 8000
+#    c) 🟢 Node.js:
 npx serve .
 ```
 
-Depois acesse `http://localhost:8000`.
+🌐 **5️⃣ Acessar a aplicação:** http://localhost:8000 (Python) ou o endereço mostrado pelo `serve`.
+
+### 🩺 Como validar o ambiente
+- ⏳ A contagem regressiva deve atualizar a cada segundo;
+- 🎲 "Sortear fantasia" deve mostrar um personagem com o estilo logo abaixo;
+- 🔄 Depois de adicionar uma tarefa e recarregar a página (F5), ela deve continuar na lista.
+
+### 🧯 Erros comuns
+| 😵 Sintoma | 🔍 Causa provável | 🛠️ Solução |
+|---|---|---|
+| 💨 Tarefas somem ao recarregar | Navegação anônima ou `localStorage` bloqueado | Use uma janela normal ou libere o armazenamento do site |
+| 🔤 Fontes diferentes do design | Sem internet ou Google Fonts bloqueado | Verifique a conexão; o layout continua funcional |
+| 🕐 Contagem com horário "errado" | O cálculo usa o fuso horário do dispositivo | Confira data e hora do sistema |
+
+## 🔐 10. Configuração e variáveis de ambiente
+
+🚫 O projeto **não usa variáveis de ambiente**, arquivos `.env` nem chaves de API.
+
+🎛️ As opções configuráveis ficam diretamente no `<script>` do `index.html`:
+
+| 📍 Onde | ✏️ O que alterar |
+|---|---|
+| `const per = [...]` | 🧛 Lista de personagens do sorteio |
+| `const est = [...]` | 🎨 Lista de estilos do sorteio |
+| `store.get('tarefas', [...])` | 📝 Tarefas padrão do primeiro acesso |
+| `alvo()` → `new Date(ano, 9, 31)` | 📅 Data-alvo (o mês começa em 0, então `9` = outubro) |
+| `:root { --bg, --blood, --pump, --grn ... }` | 🎨 Paleta de cores do tema |
+
+## 💾 11. Armazenamento de dados
+
+🗄️ Não há banco de dados. Os dados ficam no `localStorage` do navegador, em formato JSON:
+
+| 🔑 Chave | 🏷️ Tipo | 📄 Exemplo |
+|---|---|---|
+| `fav` | `string` | `"Vampiro retrô anos 80"` |
+| `tarefas` | `Array<{ t: string, d: boolean }>` | `[{"t":"Comprar doces","d":false}]` |
+
+`t` = texto da tarefa · `d` = concluída (*done*).
+
+🧹 **Para limpar os dados:** DevTools (F12) → *Application* → *Local Storage* → apagar as chaves, ou executar `localStorage.clear()` no console.
+
+## 🧪 12. Testes
+
+🚧 Ainda não há testes automatizados. Use o roteiro manual abaixo:
+
+| # | 👣 Passo | 🎯 Resultado esperado |
+|---|---|---|
+| T01 | 🌐 Abrir a página | Contagem visível e atualizando a cada segundo |
+| T02 | ⭐ Clicar em "Salvar favorita" sem sortear | Mensagem "Sorteie uma fantasia antes de salvar." |
+| T03 | 🎲 Clicar em "Sortear fantasia" | Personagem + "estilo …" exibidos |
+| T04 | 🔄 Clicar em "Salvar favorita" e recarregar | "Favorita: …" continua aparecendo |
+| T05 | ⬜ Adicionar uma tarefa vazia ou só com espaços | Nada é adicionado |
+| T06 | ➕ Adicionar "Comprar abóbora" 🎃 | Item aparece no fim da lista |
+| T07 | ☑️ Marcar uma das 4 tarefas | Item riscado e verde; barra em 25% |
+| T08 | 🗑️ Excluir todas as tarefas | Mensagem "Nenhuma tarefa. Adicione a primeira acima." |
+| T09 | 🔄 Recarregar a página | O estado da lista é mantido |
+| T10 | 📅 Simular a data 31/10 (alterando o relógio do sistema) | Exibe "Hoje! Feliz Halloween" 🎉 |
+| T11 | 📱 Abrir em tela de até 640 px | Layout em coluna única, sem rolagem horizontal |
+| T12 | ⌨️ Navegar só com o teclado (Tab/Enter/Espaço) | Todos os controles acessíveis, com contorno de foco verde |
+
+## 🚀 13. Deploy
+
+☁️ O site está hospedado no **Netlify** como site estático.
+
+**🔁 Opção 1: deploy contínuo via GitHub**
+1. No Netlify: *Add new site* → *Import an existing project* → selecione o repositório 🐙;
+2. 🏗️ *Build command*: deixe em branco · 📂 *Publish directory*: `.` (raiz);
+3. Clique em *Deploy* 🚀. Cada `push` na branch `main` gera um novo deploy.
+
+**🖱️ Opção 2: deploy manual**
+Arraste a pasta do projeto para https://app.netlify.com/drop.
+
+**⌨️ Opção 3: Netlify CLI**
+```bash
+npm install -g netlify-cli
+netlify deploy --prod --dir .
+```
+
+## 🤝 14. Como contribuir
+
+1. 🍴 Faça um *fork* e crie uma branch: `git checkout -b feature/nome-da-melhoria`;
+2. 📝 Faça commits pequenos e descritivos (ex.: `feat: adiciona aba de músicas`, `fix: corrige cor do botão favorita`);
+3. 🧪 Execute o roteiro de testes manuais da seção 12;
+4. 🔀 Abra um **Pull Request** descrevendo a mudança e anexando prints 📸, se houver alteração visual.
+
+> ⚠️ Nunca commite senhas 🔑, tokens 🎟️ ou arquivos `.env` 📁.
+
+## 🐛 15. Problemas conhecidos e próximos passos
+
+- 🎨 O botão "Salvar favorita" usa a variável CSS `--panel`, que não está definida em `:root`; por isso o fundo cai no valor padrão.
+- 🗂️ O CSS já prevê abas (`nav`, `section.tab`) e o cabeçalho cita "Fantasias, Doces, Boa música, Tarefas", mas só a seção principal (`#app`) foi implementada.
+- 💡 **Ideias:** 🍬 abas de receitas de doces e 🎵 de playlist, ✏️ edição de tarefas, 📤 exportar a lista e 🤖 testes automatizados (ex.: Playwright).
 
 ---
 
-## 🔧 Configuração
-
-O projeto não exige configuração para rodar. Se quiser personalizar, edite o `index.html`:
-
-| ✏️ O que mudar | 📍 Onde |
-| --- | --- |
-| Personagens das fantasias | Array `per` no `<script>` |
-| Estilos das fantasias | Array `est` no `<script>` |
-| Tarefas iniciais | Valor padrão de `store.get('tarefas', [...])` |
-| Cores do tema | Variáveis em `:root` (`--blood`, `--pump`, `--grn`, `--ink`, `--bg`) |
-| Data da contagem | Função `alvo()` (mês `9` = outubro, dia `31`) |
-
----
-
-## 🔌 APIs, banco de dados e variáveis de ambiente
-
-| 📚 Item | 📋 Situação |
-| --- | --- |
-| **APIs próprias** | Não há. O sistema não faz requisições a servidores, exceto o carregamento das fontes |
-| **Banco de dados** | Não há. Os dados ficam no `localStorage` do navegador |
-| **Variáveis de ambiente** | Não há. Nenhuma chave ou segredo é necessário |
-
-### 💾 Dados guardados no `localStorage`
-
-| 🔑 Chave | 🧾 Formato | 📝 Exemplo |
-| --- | --- | --- |
-| `tarefas` | Lista de objetos `{ t: texto, d: concluída }` | `[{"t":"Comprar doces","d":false}]` |
-| `fav` | Texto | `"Bruxa retrô anos 80"` |
-
----
-
-## 🧪 Testes
-
-O projeto não possui testes automatizados. A verificação é **manual**, seguindo o roteiro abaixo.
-
-| 🧪 Caso | 👣 Passos | ✅ Resultado esperado | 📋 Requisito |
-| --- | --- | --- | --- |
-| CT01 | Abrir a página | Os dentes mostram dias, horas, minutos e segundos e o segundo muda sozinho | RF01 |
-| CT02 | Clicar em "Sortear fantasia" várias vezes | Surge uma combinação nova de personagem e estilo | RF02 |
-| CT03 | Sortear, clicar em "Salvar favorita" e recarregar | A favorita continua exibida | RF03, RF08 |
-| CT04 | Adicionar uma tarefa | Ela aparece na lista | RF04 |
-| CT05 | Marcar e desmarcar uma tarefa | O texto é riscado e volta ao normal | RF05 |
-| CT06 | Clicar em × | A tarefa some | RF06 |
-| CT07 | Concluir metade das tarefas | A barra verde chega a cerca de 50% | RF07 |
-| CT08 | Recarregar a página | Tarefas e estados continuam | RF08 |
-| CT09 | Excluir todas as tarefas | Aparece a mensagem de lista vazia | RF09 |
-| CT10 | Reduzir a janela até 360 px | Sem rolagem horizontal da página | RNF03 |
-| CT11 | Navegar só com o teclado (Tab) | O foco fica visível em todos os controles | RNF04 |
-| CT12 | Abrir em Chrome, Firefox, Safari e Edge | Funciona igual nos quatro | RNF05 |
-
-💡 Para medir desempenho e acessibilidade, rode o **Lighthouse** (aba "Lighthouse" das ferramentas do desenvolvedor do Chrome).
-
----
-
-## 🌐 Deploy
-
-O site está publicado na **Netlify**: https://hallowenies.netlify.app/
-
-### Opção 1: arrastar e soltar
-
-1. Acesse https://app.netlify.com/drop.
-2. Arraste a pasta do projeto (com o `index.html` na raiz).
-
-### Opção 2: integração com o GitHub (deploy contínuo)
-
-1. No Netlify, escolha **Add new site → Import an existing project** e conecte o repositório.
-2. Deixe **Build command** em branco.
-3. Defina **Publish directory** como `.` (a raiz).
-4. A cada `git push`, o site é atualizado automaticamente.
-
-> ⚠️ O arquivo principal precisa se chamar `index.html` e ficar na raiz, para a Netlify abri-lo como página inicial.
-
----
-
-## 📖 Glossário
-
-| 🔤 Termo | 💬 Significado |
-| --- | --- |
-| **Escopo** | Lista do que o sistema faz e do que não faz |
-| **Requisito funcional (RF)** | Algo que o sistema deve *fazer* |
-| **Requisito não funcional (RNF)** | Uma qualidade que o sistema deve *ter* (rapidez, segurança, acessibilidade) |
-| **Responsivo** | Que se adapta a telas de qualquer tamanho |
-| **localStorage** | Espaço no navegador onde o site guarda informações, mesmo após fechar a página |
-| **Deploy** | Publicação do site na internet |
-| **Contraste** | Diferença entre cor do texto e do fundo, que garante boa leitura |
-
----
-
-<p align="center">🎃 👻 🦇 🕸️ 🕯️<br><b>Noite Sombria</b> · Halloween 31/10</p>
+<p align="center">👻 Feito com 🧡 para uma noite bem sombria 🎃🦇🕸️</p>
